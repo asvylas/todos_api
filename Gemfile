@@ -33,9 +33,18 @@ gem 'bcrypt', '~> 3.1.7'
 # json-web-token
 gem 'jwt'
 
+# active model serializers
+gem 'active_model_serializers', '~> 0.10.0'
+
+# pagination
+gem 'will_paginate', '~> 3.1.0'
+
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS)
 # making cross-origin AJAX possible
 # gem 'rack-cors'
+
+gem 'faker'
+gem 'rswag'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution
@@ -59,7 +68,6 @@ end
 group :test do
   gem 'database_cleaner'
   gem 'factory_bot_rails', '~> 4.0'
-  gem 'faker'
   gem 'shoulda-matchers', '~> 3.1'
 end
 
